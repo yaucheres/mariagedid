@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geneva Jug</title>
+    <description></description>
+    <link>https://yaucheres.github.io/</link>
+    <atom:link href="https://yaucheres.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 16 Apr 2019 12:35:33 +0200</pubDate>
+    <lastBuildDate>Tue, 16 Apr 2019 12:35:33 +0200</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Vert.x</title>
+        <description>&lt;p&gt;The reactive movement proposes a way to build distributed system infusing asynchrony at the heart of the application. Reactive promises more responsiveness, robustness and interactivity. They efficiently use the CPU and memory making them perfectly suited for the Cloud &amp;amp; Containers world. However, reactive is challenging. How do you exchange messages, handle concurrent requests asynchronously, process streams, develop asynchronous code?&lt;/p&gt;
+
+&lt;p&gt;Eclipse Vert.x offers everything you need to build such a system. Vert.x is a toolkit to build reactive distributed systems and enables the development of reactive microservices running seamlessly and efficiently in containerized environments. Vert.x combines an asynchronous execution model, Reactive eXtensions, and a thrilling ecosystem. It’s also incredibly flexible - whether it’s an API gateway, sophisticated web applications, or a high-volume event processing, Vert.x is a great fit.&lt;/p&gt;
+
+&lt;p&gt;This session explains why reactive and Vert.x are important when building distributed and Cloud applications. After an explanation about “Why Vert.x”, the session also covers the “How to Vert.x” by showing a set of demos covering Restful applications, edge services and streaming / IOT pipelines&lt;/p&gt;
+</description>
+        <pubDate>Tue, 30 Apr 2019 00:00:00 +0200</pubDate>
+        <link>https://yaucheres.github.io/event/vertx.html</link>
+        <guid isPermaLink="true">https://yaucheres.github.io/event/vertx.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Kotlin</title>
+        <description>&lt;p&gt;Cette session présentera l’évolution actuelle de Kotlin. Le développement multiplateforme sera présenté en détail avec le retour d’expérience du développement data2viz.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 30 Jan 2019 00:00:00 +0100</pubDate>
+        <link>https://yaucheres.github.io/event/kotlin.html</link>
+        <guid isPermaLink="true">https://yaucheres.github.io/event/kotlin.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>istio</title>
+        <description>&lt;p&gt;Istio, we have a problem! We’ve just deployed a shinny new set of micro-services and it behaves in a strange manner. Hard to say why with so many moving parts…&lt;/p&gt;
+
+&lt;p&gt;Let’s leverage the newly installed service mesh to understand what we’ve deployed, find the root problem, fix it with a bandaid and then do a proper, non trivial, blue-green deployment of a v2.&lt;/p&gt;
+
+&lt;p&gt;That will involve the Service Graph, Prometheus monitoring, Grafana Dashboards, Traffic mirroring, all orchestrated in a simple manner by Istio.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 27 Nov 2018 00:00:00 +0100</pubDate>
+        <link>https://yaucheres.github.io/event/istio.html</link>
+        <guid isPermaLink="true">https://yaucheres.github.io/event/istio.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

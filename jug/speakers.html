@@ -1,0 +1,22 @@
+---
+layout : default
+---
+
+          <script type="text/javascript">
+          //<![CDATA[
+          $(document).ready(function() {
+          $("#speakers").attr("class", "active");
+          var params = location.search.substring(1).split(/&/);
+          var sessionParam = params[0].split('=');
+          $("a#"+sessionParam[1]).click();
+          })
+          //]]>
+          </script>
+          <div class="disp">
+            <ul id="grid-speaker">
+              {% for speaker in site.speakers reversed %}
+	      <li><a href="{{ speaker.url }}" class="load" id="{{ speaker.id | remove: "/speakers/" }}"><img src="/images{{ speaker.id }}.jpg" alt="{{ speaker.title }}" /></a></li>
+	      {% endfor %}
+            </ul>
+          </div>
+          <div id="details" class="disp"></div>

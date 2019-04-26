@@ -1,0 +1,15 @@
+---
+layout: default
+---
+          <div class="disp">
+            <ul>
+            {% capture currentDate %}{{'now' | date: '%s' }}{% endcapture %}
+            {% for post in site.posts %}
+              {% capture blogDate %}{{post.date | date: '%s' }}{% endcapture %}
+              {% if blogDate < currentDate %}
+	      <li>{{ post.date | date: "%b %-d, %Y" }}<a href="{{ post.url | prepend: site.baseurl }}" class="load" id="{{ post.name }}" name="{{ post.name }}" > {{ post.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+            </ul>
+          </div>
+          <div id="details" class="disp"></div>

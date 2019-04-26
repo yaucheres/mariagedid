@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+{% include head.html %}
+<body>
+  <div id="superimage">
+	  <img src="/images/bg_01.jpg" alt="background1" /> 
+	  <img src="/images/bg_02.jpg" alt="background2" /> 
+	  <img src="/images/bg_03.jpg" alt="background3" /> 
+	  <img src="/images/bg_04.jpg" alt="background4" />
+  </div>
+  <div id="container" class="scroll_auto">
+    <div id="main_container">
+      {% include nav.html %}
+      <div id="main">
+        <div id="slogan">
+		{{ site.slogan}}
+        </div>
+        <div id="content">
+          {{ content }}
+          {% include footer.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% include google-analytics.html %}
+{% include tracker.html %}
+</body>
+</html>

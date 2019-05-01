@@ -1,8 +1,10 @@
 <script type="text/javascript">
     $(document).ready(function() {
+	var params = location.search.substring(1).split(/&/);
+        var sessionParam = params[0].split('=');
+        $("a#"+sessionParam[1]).click();
         var sectionId="nav-"+window.location.pathname.split("/")[1];
         var sectionDiv=document.getElementById(sectionId);
-	
 	    if(sectionDiv){
                 sectionDiv.style.display = "block";
                 sectionDiv.parentNode.className="parent active"
@@ -10,9 +12,6 @@
 	var pageName=window.location.pathname.split("/")[2];
 	if(pageName)
 	   document.getElementById(pageName.replace(/.html/,"")).className="active"
-	var params = location.search.substring(1).split(/&/);
-        var sessionParam = params[0].split('=');
-        $("a#"+sessionParam[1]).click();
     });
 </script>
 <div id="navigation">
@@ -30,7 +29,7 @@
       <li>
 	<a href="/partners/sponsors.html">Partenaires</a>
         <ul id="nav-partners">
-          <li id="sponsor"><a href="sponsors.html">Sponsors</a></li>
+          <li id="sponsors"><a href="sponsors.html">Sponsors</a></li>
           <li id="soutien"><a href="soutien.html">Soutenez nous</a></li>
         </ul>
       </li>

@@ -3,8 +3,13 @@
               <li>
                 <h3>sponsors premiums</h3>
                 <ul id="grid-premium-footer">
+                  {%for premium in site.sponsors_premium%}
+		    {%assign premiumid=premium.id | remove "/sponsors_premium/"%}
+		    <li><a href="/partners/sponsors.html?sponsor={{premiumid}}"><img src="{{premium.img}}" alt="{{premium.title}}" /></a></li>
+                  {%endfor%}
                   <li><a href="/partners/sponsors.html?sponsor=oosphere"><img src="/images/sponsors/logo-OOsphere.png" alt="OOsphere" /></a></li>
                   <li><a href="/partners/sponsors.html?sponsor=hortis"><img src="/images/sponsors/logo-hortis.png" alt="Hortis" /></a></li>
+
                 </ul>
               </li>
               <li>

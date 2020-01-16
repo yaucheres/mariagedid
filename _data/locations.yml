@@ -1,0 +1,13 @@
+fusion:
+    name: Fusion Fintech
+    link: https://www.fusion.xyz/
+    address: Avenue de la Praille 50, 1227 Carouge
+    transport: P+R Etoile
+    parking: P+R Etoile
+
+voisins105:
+    name: Voisins 105 
+    link: https://105.voisins.ch
+    address: Route des jeunes 105A, 1227 Carouge
+    transport: Stade de Genève
+    parking: P+R Voie Centrale (Free from 19H) or Centre commercial de la Praille

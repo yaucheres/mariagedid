@@ -1,0 +1,18 @@
+
+{{page.postcontent}}
+
+<p><br /></p>
+<p style="font-family: 'Lucida Grande', lucida-sans, Arial, Helvetica, Tahoma; font-size: 14px; line-height: 16px; margin: 0px; padding: 0px 0px 10px; color: #707070; text-align: center;"><br class="Apple-interchange-newline" />Premiums Sponsors</p>
+<p style="font-family: 'Lucida Grande', lucida-sans, Arial, Helvetica, Tahoma; font-size: 14px; line-height: 16px; margin: 0px; padding: 0px 0px 10px; color: #707070; text-align: center;">
+{% for premium in site.sponsors_premium %}
+  {% assign premiumid = premium.id | remove: "/sponsors_premium/"%}
+  <a href="{{premium.website}}" rel="nofollow"><img style="margin-left: 5px; margin-right: 5px;" alt="" src="https://genevajug.ch{{premium.img}}" height="115" width="150" /></a>
+{%endfor%}
+</p>
+<p style="font-family: 'Lucida Grande', lucida-sans, Arial, Helvetica, Tahoma; font-size: 14px; line-height: 16px; margin: 0px; padding: 0px 0px 10px; color: #707070; text-align: center;">Season Sponsors</p>
+<p style="font-family: 'Lucida Grande', lucida-sans, Arial, Helvetica, Tahoma; font-size: 14px; line-height: 16px; margin: 0px; padding: 0px 0px 10px; color: #707070; text-align: center;">
+  {% for season in site.sponsors_saison %}
+  {% assign seasonid = saison.id | remove: "/sponsors_saison/"%}
+  <a href="{{season.website}}" rel="nofollow"><img style="margin-left: 5px; margin-right: 5px;" alt="" src="https://genevajug.ch{{premium.img}}" height="77" width="100" /></a>
+{%endfor%}
+</p>
